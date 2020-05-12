@@ -1,0 +1,49 @@
+.App {
+  height: 100%;
+  max-width: 1000px;
+  min-width: 380px;
+  width: 100%;
+}
+
+.keypad-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.double-space {
+  grid-column-end: 3;
+  grid-column-start: 1;
+}
+
+.visor {
+  background-color: #858694;
+  color: #fff;
+  font-size: 24px;
+  line-height: 2em;
+  padding: 1rem 10px;
+  text-align: end;
+}
+
+.keypad-row button {
+  background: #e0e0e0;
+  border: 1px solid #aeaeae82;
+  text-align: center;
+  font-size: 24px;
+  line-height: 4em;
+}
+
+.keypad-row button:last-child {
+  background-color: #f5913e;
+}
+
+.keypad-row button:hover {
+  background: ;
+  filter: brightness(0.95);
+  box-shadow: 2px 2px 4px #d1d1d1;
+}
+
+button::-moz-focus-inner {
+  border: 0;
+  outline: none;
+  box-shadow: -2px -2px 4px #d1d1d1;
+}
