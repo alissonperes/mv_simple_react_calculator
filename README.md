@@ -2,6 +2,8 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+Live version on [Heroku](https://magicians-calculator.herokuapp.com/)
+
 ## Authors
 
 - Alisson Peres
