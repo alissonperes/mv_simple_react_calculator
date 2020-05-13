@@ -1,0 +1,4 @@
+.keypad-row {
+  display: flex;
+  height: 100px;
+}

@@ -1,0 +1,19 @@
+.keypad-row button {
+  border: 1px solid #aeaeae82;
+  font-size: 24px;
+  line-height: 4em;
+  text-align: center;
+  width: 25%;
+}
+
+.keypad-row button:hover {
+  background: ;
+  filter: brightness(0.95);
+  box-shadow: 2px 2px 4px #d1d1d1;
+}
+
+button::-moz-focus-inner {
+  border: 0;
+  outline: none;
+  box-shadow: -2px -2px 4px #d1d1d1;
+}
