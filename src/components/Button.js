@@ -1,14 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function Button(props) {
+const Button = props => {
   const { name, className } = props;
   return (
     <button type="button" className={className}>
       {name}
     </button>
   );
-}
+};
 
 Button.defaultProps = {
   className: 'button',
