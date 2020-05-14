@@ -2,7 +2,7 @@ import operate from './operate';
 
 const calculate = (calculatorObject, buttonName) => {
   let { total, next, operation } = calculatorObject;
-  const operations = ['+', '-', 'x', '÷', '%'];
+  const operations = ['+', '-', 'x', '÷'];
   const numbers = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '.'];
 
   if (numbers.indexOf(buttonName) > -1) {
@@ -45,6 +45,14 @@ const calculate = (calculatorObject, buttonName) => {
       total = operate(total, next, operation);
       next = null;
       operation = null;
+    }
+  }
+
+  if (buttonName === '%') {
+    if (next !== null) {
+      next = (next / 100).toString();
+    } else {
+      total = (total / 100).toString();
     }
   }
 
