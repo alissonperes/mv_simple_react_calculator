@@ -4,12 +4,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 Live version on [Heroku](https://magicians-calculator.herokuapp.com/)
 
-## Authors
-
-- Alisson Peres
-  - [GitHub](https://github.com/alissonperes/)
-  - [Linkedin](https://www.linkedin.com/in/alissonperes)
-
 ## Built With:
 
 - Node.js
@@ -37,6 +31,16 @@ Launches the test runner in the interactive watch mode.<br />
 
 Builds the app for production to the `build` folder.<br />
 It correctly bundles React in production mode and optimizes the build for the best performance.
+
+## Wiki
+
+To follow the progress of the creation of this app, check out the [Github Wiki](https://github.com/alissonperes/mv_simple_react_calculator/wiki) I created with all the milestones.
+
+## Authors
+
+- Alisson Peres
+- [GitHub](https://github.com/alissonperes/)
+- [Linkedin](https://www.linkedin.com/in/alissonperes)
 
 ## Aknowldgments
 
