@@ -6,7 +6,7 @@ const calculate = (calculatorObject, buttonName) => {
   const numbers = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '.'];
 
   if (numbers.indexOf(buttonName) > -1) {
-    if (total === null) {
+    if (total === null || total === 'Division by 0 error') {
       total = buttonName;
     } else if (operation === null) {
       if (buttonName !== '.') {
@@ -24,8 +24,11 @@ const calculate = (calculatorObject, buttonName) => {
   }
 
   if (operations.indexOf(buttonName) > -1) {
-    if (total !== null) {
+    if (total !== null && operation === null) {
       operation = buttonName;
+    } else if (total !== null && operation !== null) {
+      total = operate(total, next, operation);
+      next = null;
     }
   }
 

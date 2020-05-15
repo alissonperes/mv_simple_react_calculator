@@ -13,13 +13,18 @@ const operate = (numberOne, numberTwo, operand) => {
       // .minus
       result = numOne.minus(numTwo).toString();
       break;
-    case '*':
+    case 'x':
       // .times
       result = numOne.times(numTwo).toString();
       break;
     case '÷':
       // .div
-      result = numOne.div(numTwo).toString();
+      if (numberTwo === '0') {
+        console.log(numOne, numTwo);
+        result = 'Division by 0 error';
+      } else {
+        result = numOne.div(numTwo).toString();
+      }
       break;
     default:
       break;
