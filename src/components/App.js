@@ -26,7 +26,8 @@ class App extends React.Component {
   }
 
   render() {
-    const displayResult = this.state.next || this.state.operation || this.state.total || '0';
+    const { next, operation, total } = this.state;
+    const displayResult = next || operation || total || '0';
     return (
       <div className="App">
         <Display result={displayResult.toString()} />

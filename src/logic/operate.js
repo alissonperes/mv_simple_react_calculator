@@ -20,7 +20,6 @@ const operate = (numberOne, numberTwo, operand) => {
     case '÷':
       // .div
       if (numberTwo === '0') {
-        console.log(numOne, numTwo);
         result = 'Division by 0 error';
       } else {
         result = numOne.div(numTwo).toString();
